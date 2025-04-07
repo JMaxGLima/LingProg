@@ -12,10 +12,12 @@ ou calcular o perimetro e a area de um retangulo.
 
 License: CC BY
 
+Update: 31/03/2025: Código alterado para prática 4 adicionando loop "for" até que tecla Esc seja pressionada para finalizar programa ao fim de cada loop
 */
 
 #include <iostream>
 #include <memory>
+#include <conio.h>  
 
 // Valor de PI definido
 #define PI 3.14
@@ -53,7 +55,7 @@ void calcular_retangulo(float comprimento, float largura) {
 
 int main() {
 	int opcao;
-
+	for (;;){
 	// Exibe o menu de opcoes
 	std::cout << "Escolha a opcao:" << std::endl;
 	std::cout << "1 - calculos do circulo" << std::endl;
@@ -70,10 +72,6 @@ int main() {
 		// Criando um objeto Circle e chamando o metodo para calculo
 		Circle c(raio);
 		c.calcular();
-
-		// Exibe os resultados do circulo
-		std::cout << "Comprimento da circunferencia: " << c.comprimento << std::endl;
-		std::cout << "area do circulo: " << c.area << std::endl;
 
 	} else if (opcao == 2) {
 		// Calculos relacionados ao retangulo
@@ -92,6 +90,11 @@ int main() {
 	} else {
 		std::cout << "opcao invalida." << std::endl;
 	}
-
+	std::cout << "\nPressione ESC para sair ou qualquer outra tecla para continuar...\n";
+	while(std::cin.get() != '\n'); // Limpa o buffer de entrada
+	int key = _getch(); // Usando _getch() que é mais moderno que getch()
+	if(key == 27)
+		break;
+	}
 	return 0;
 }

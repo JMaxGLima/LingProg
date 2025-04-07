@@ -13,6 +13,7 @@ ou calcular o perimetro e a area de um retangulo.
 License: CC BY
 
 
+Update: 31/03/2025: Codigo alterado para pratica 4 adicionando loop "for" ate que tecla Esc seja pressionada para finalizar programa ao fim de cada loop
 */
 
 #include <stdio.h>
@@ -52,7 +53,7 @@ int main() {
         printf("\nEscolha a opcao:\n");
         printf("1 - calculos do circulo\n");
         printf("2 - calculos do retangulo\n");
-        printf("Digite sua escolha (ou ESC para sair): ");
+        printf("Digite sua escolha: ");
         scanf("%d", &caso);
 
         if (caso == 1) {

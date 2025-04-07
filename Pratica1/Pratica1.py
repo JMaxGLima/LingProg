@@ -12,7 +12,9 @@ ou calcular o perimetro e a area de um retangulo.
 
 License: CC BY
 
+Update: 07/04/2025: Código alterado para prática 4 adicionando loop "for" até que tecla Esc seja pressionada para finalizar programa ao fim de cada loop
 """
+import msvcrt
 
 # Valor de PI definido
 PI = 3.14
@@ -50,22 +52,34 @@ def calcular_retangulo():
 
 # Funcao principal
 def main():
-    # Menu de opcoes para usuario
-    print("Escolha a opcao:")
-    print("1 - calculos do circulo")
-    print("2 - calculos do retangulo")
+    for _ in iter(int, 1):
+        # Menu de opcoes para usuario
+        print("Escolha a opcao:")
+        print("1 - calculos do circulo")
+        print("2 - calculos do retangulo")
 
-    # Escolha do usuario
-    opcao = input("Digite sua escolha:  ")
+        # Escolha do usuario
+        opcao = input("Digite sua escolha:  ")
 
-    # Verifica a opcao escolhida e chama a funcao correspondente
-    if opcao == "1":
-        calcular_circulo()
-    elif opcao == "2":
-        calcular_retangulo()
-    else:
-        print("Opcao invalida!")
+        # Verifica a opcao escolhida e chama a funcao correspondente
+        if opcao == "1":
+            calcular_circulo()
+        elif opcao == "2":
+            calcular_retangulo()
+        else:
+            print("Opcao invalida!")
+        print("\nPressione ESC para sair ou qualquer outra tecla para continuar...")
 
+        # Limpa o buffer de entrada
+        while msvcrt.kbhit():
+            msvcrt.getch()
+
+        # Captura a tecla
+        key = ord(msvcrt.getch())
+
+        if key == 27:  # ESC
+            exit()
+    
 
 # Executa a funcao principal
 if __name__ == "__main__":
