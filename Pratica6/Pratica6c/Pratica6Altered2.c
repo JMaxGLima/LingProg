@@ -1,3 +1,10 @@
+/*Para implementar uma pilha (stack) usando a lista encadeada,
+precisamos definir um tipo tStack que terá um ponteiro para o topo da pilha. 
+Como estamos trabalhando com uma pilha (LIFO - Last In First Out), 
+todas as operações (push e pop) devem ser feitas no mesmo extremo da lista para eficiência.
+Neste caso, o topo da pilha será o primeiro elemento da lista (first_elem), pois isso permite inserção e remoção em tempo constante O(1).
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -66,7 +73,7 @@ void free_stack(tStack* stack) {
 
 void print_stack(tStack* stack) {
     tNode* current = stack->list->first_elem;
-    printf("Pilha (topo -> base): ");
+    printf("Pilha: ");
     while (current != NULL) {
         printf("%d ", current->data);
         current = current->next;
@@ -82,7 +89,7 @@ int main() {
     push(pilha, 30);
     print_stack(pilha); 
 
-    printf("Pop: %d\n", pop(pilha));  
+    printf("Removido: %d\n", pop(pilha));  
     print_stack(pilha); 
 
     push(pilha, 40);
