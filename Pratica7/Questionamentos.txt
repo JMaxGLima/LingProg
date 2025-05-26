@@ -1,0 +1,39 @@
+Respostas à Seção de Questionamentos
+
+1) Ordem de exibição em percurso "em ordem"
+
+2) Aplicações para árvores e grafos
+
+Árvores:
+1. Sistemas de arquivos (estrutura de diretórios)
+2. Tomada de decisão em inteligência artificial (árvores de decisão)
+3. Compressão de dados (árvores de Huffman)
+
+Grafos:
+1. Sistemas de recomendação (redes de usuários e produtos)
+2. Roteamento em redes de telecomunicações
+3. Modelagem de circuitos elétricos
+
+3) Grafo representado pela matriz de pesos
+      
+4) Implementação de nó em grafo usando listas ligadas
+
+Em uma implementação ligada de grafo, cada nó (vértice) teria:
+- Um identificador (ex: letra ou número)
+- Uma lista de adjacências (ponteiros para nós vizinhos)
+- Possivelmente um peso associado a cada conexão
+- Outros dados adicionais conforme necessário
+
+5) Dispositivos para lidar com árvores e grafos
+
+1. Python:
+   - `defaultdict` e `heapq` são módulos padrão úteis
+   - NetworkX oferece implementações prontas (`networkx.Graph`, `networkx.DiGraph`)
+
+2. C++:
+   - A STL fornece `priority_queue` e `vector`
+   - Boost.Graph é mais completo para algoritmos complexos
+
+3. MATLAB:
+   - `containers.Map` é útil para listas de adjacência
+   - A classe `PriorityQueue` seria uma implementação customizada
