@@ -1,0 +1,8 @@
+nome: João Silva
+idade: 35
+email: joao.silva@email.com
+telefones:
+  - tipo: residencial
+    numero: 123-456-7890
+  - tipo: celular
+    numero: 987-654-3210

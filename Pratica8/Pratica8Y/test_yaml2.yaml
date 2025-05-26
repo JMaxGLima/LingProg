@@ -1,0 +1,16 @@
+pessoa:
+  nome: João Silva
+  idade: 35
+  contatos:
+    - tipo: email
+      valor: joao@exemplo.com
+    - tipo: telefone
+      valor: 00 01010-2121
+  habilidades:
+    programação: avançado
+    design: básico
+projetos:
+  - nome: Sistema de Gerenciamento
+    linguagem: Python
+  - nome: Site Corporativo
+    linguagem: JavaScript
