@@ -1,0 +1,280 @@
+% Programa: Pratica8.m
+% Autor: Joao Max Germano Lima
+% Data: 26/05/2025
+%
+% Descrição: Programa principal que implementa um menu interativo para demonstrar
+% diversas operações de manipulação de arquivos em MATLAB, incluindo:
+% - Leitura caractere por caractere
+% - Leitura linha por linha
+% - Manipulação de dados binários (datas)
+% - Acesso aleatório em arquivos
+% - Análise de arquivos CSV
+%
+% Licença: CC BY
+
+function Pratica8()
+    % PROGRAMA PRINCIPAL
+    % Exibe o menu e processa as opções do usuário em loop até que seja selecionada a opção de saída
+    
+    choice = -1;  % Inicializa a variável de escolha do menu
+    
+    % Loop principal do programa
+    while choice ~= 0
+        displayMenu();              % Exibe o menu de opções
+        choice = input('');         % Lê a escolha do usuário
+        
+        % Processa a escolha do usuário
+        switch choice
+            case 1
+                readByCharacters();    % Opção 1: Leitura caractere por caractere
+            case 2
+                readByLines();          % Opção 2: Leitura linha por linha
+            case 3
+                handleBinaryData();     % Opção 3: Manipulação de dados binários
+            case 4
+                randomAccess();         % Opção 4: Acesso aleatório a arquivo
+            case 5
+                parseCSV();             % Opção 5: Análise de arquivo CSV
+            case 0
+                fprintf('Saindo do programa.\n');  % Opção 0: Saída do programa
+            otherwise
+                fprintf('Opcao invalida. Por favor, tente novamente.\n'); % Tratamento de opção inválida
+        end
+    end
+end
+
+function readByCharacters()
+    % FUNÇÃO READBYCHARACTERS
+    % Lê um arquivo de texto caractere por caractere e exibe na tela
+    %
+    % Funcionamento:
+    % 1. Abre o arquivo 'test_file.txt' no diretório atual
+    % 2. Lê e exibe cada caractere individualmente
+    % 3. Fecha o arquivo ao final ou em caso de erro
+    
+    filename = fullfile(pwd, 'test_file.txt');  % Cria o caminho completo para o arquivo
+    
+    try
+        % Abre o arquivo em modo leitura
+        fid = fopen(filename, 'r');
+        if fid == -1
+            error('Erro ao abrir o arquivo.');  % Lança erro se não conseguir abrir
+        end
+        
+        fprintf('\nLendo caracteres um por um:\n');
+        
+        % Loop de leitura caractere por caractere
+        while ~feof(fid)               % Enquanto não chegar ao final do arquivo
+            ch = fscanf(fid, '%c', 1); % Lê um caractere
+            fprintf('%s\n', ch);        % Exibe o caractere lido
+        end
+        
+        fclose(fid);  % Fecha o arquivo
+        
+    catch ME
+        % Tratamento de erros
+        fprintf('Erro: %s\n', ME.message);
+        if exist('fid', 'var') && fid ~= -1
+            fclose(fid);  % Garante que o arquivo será fechado mesmo em caso de erro
+        end
+    end
+end
+
+function readByLines()
+    % FUNÇÃO READBYLINES
+    % Lê um arquivo de texto linha por linha e exibe na tela
+    %
+    % Funcionamento:
+    % 1. Abre o arquivo 'test_file.txt' no diretório atual
+    % 2. Lê e exibe cada linha completa
+    % 3. Fecha o arquivo ao final ou em caso de erro
+    
+    filename = fullfile(pwd, 'test_file.txt');  % Cria o caminho completo para o arquivo
+    
+    try
+        % Abre o arquivo em modo leitura
+        fid = fopen(filename, 'r');
+        if fid == -1
+            error('Erro ao abrir o arquivo.');  % Lança erro se não conseguir abrir
+        end
+        
+        fprintf('\nLendo linhas uma por uma:\n');
+        
+        % Loop de leitura linha por linha
+        while ~feof(fid)             % Enquanto não chegar ao final do arquivo
+            line = fgetl(fid);       % Lê uma linha inteira
+            fprintf('%s\n', line);   % Exibe a linha lida
+        end
+        
+        fclose(fid);  % Fecha o arquivo
+        
+    catch ME
+        % Tratamento de erros
+        fprintf('Erro: %s\n', ME.message);
+        if exist('fid', 'var') && fid ~= -1
+            fclose(fid);  % Garante que o arquivo será fechado mesmo em caso de erro
+        end
+    end
+end
+
+function handleBinaryData()
+    % FUNÇÃO HANDLEBINARYDATA
+    % Manipula dados binários (datas) gravando e lendo de/para arquivo
+    %
+    % Funcionamento:
+    % 1. Solicita ao usuário o nome do arquivo para operações binárias
+    % 2. Grava duas datas no arquivo em formato binário
+    % 3. Lê as datas de volta do arquivo
+    % 4. Exibe as datas lidas no formato DD/MM/AAAA
+    %
+    % Observações:
+    % - As datas são armazenadas como vetores [dia, mês, ano]
+    % - Usa inteiros de 32 bits para cada componente da data
+    
+    % Define as datas de exemplo (vetores [dia, mês, ano])
+    d1 = [7, 9, 1999];  % Primeira data: 07/09/1999
+    d2 = [12, 5, 2024]; % Segunda data: 12/05/2024
+    
+    % Solicita o nome do arquivo ao usuário
+    filename = input('\nDigite o nome do arquivo para dados binarios: ', 's');
+    
+    try
+        % OPERAÇÃO DE ESCRITA
+        % Abre o arquivo para escrita binária
+        fid = fopen(filename, 'wb');
+        if fid == -1
+            error('Erro! Não foi possível abrir o arquivo para escrita!');
+        end
+        
+        % Escreve as datas no arquivo (cada componente como int32)
+        fwrite(fid, d1, 'int32');  % Escreve a primeira data
+        fwrite(fid, d2, 'int32');  % Escreve a segunda data
+        fclose(fid);               % Fecha o arquivo
+        
+        % OPERAÇÃO DE LEITURA
+        % Reabre o arquivo para leitura binária
+        fid = fopen(filename, 'rb');
+        if fid == -1
+            error('Erro! Não foi possível abrir o arquivo para leitura!');
+        end
+        
+        % Lê as datas do arquivo
+        e1 = fread(fid, 3, 'int32')';  % Lê a primeira data (transposta para vetor linha)
+        e2 = fread(fid, 3, 'int32')';  % Lê a segunda data (transposta para vetor linha)
+        fclose(fid);                   % Fecha o arquivo
+        
+        % Exibe os resultados formatados
+        fprintf('Primeira Data (DD/MM/AAAA): %02d/%02d/%d\n', e1(1), e1(2), e1(3));
+        fprintf('Segunda Data (DD/MM/AAAA): %02d/%02d/%d\n', e2(1), e2(2), e2(3));
+        
+    catch ME
+        % Tratamento de erros
+        fprintf('Erro: %s\n', ME.message);
+        if exist('fid', 'var') && fid ~= -1
+            fclose(fid);  % Garante que o arquivo será fechado mesmo em caso de erro
+        end
+    end
+end
+
+function randomAccess()
+    % FUNÇÃO RANDOMACCESS
+    % Demonstra acesso aleatório a arquivo binário
+    %
+    % Funcionamento:
+    % 1. Cria/abre um arquivo binário chamado 'data.bin'
+    % 2. Escreve um caractere em uma posição específica (posição 3)
+    % 3. Lê o caractere da mesma posição para verificação
+    % 4. Exibe o caractere lido
+    %
+    % Observações:
+    % - Preenche as posições anteriores com zeros (ASCII 0)
+    % - Mostra como posicionar o ponteiro do arquivo em posições específicas
+    
+    filename = 'data.bin';  % Nome do arquivo para operações
+    
+    try
+        % Abre o arquivo para escrita e leitura binária (cria se não existir)
+        fid = fopen(filename, 'wb+');
+        if fid == -1
+            error('Erro ao abrir o arquivo.');
+        end
+        
+        position = 3;  % Posição onde será escrito o caractere
+        ch = 'G';      % Caractere a ser escrito
+        
+        % Preenche o arquivo com zeros até a posição desejada
+        for i = 0:position-1
+            fwrite(fid, char(0), 'char');  % Escreve caractere nulo (ASCII 0)
+        end
+        
+        % Escreve o caractere na posição especificada
+        fwrite(fid, ch, 'char');
+        
+        % Reposiciona o ponteiro para ler o caractere escrito
+        fseek(fid, position, 'bof');        % Move para a posição
+        ch_read = fread(fid, 1, 'char');    % Lê o caractere
+        
+        % Exibe o resultado
+        fprintf('\nDados lidos da posicao %d: %s\n', position, char(ch_read));
+        
+        fclose(fid);  % Fecha o arquivo
+        
+    catch ME
+        % Tratamento de erros
+        fprintf('Erro: %s\n', ME.message);
+        if exist('fid', 'var') && fid ~= -1
+            fclose(fid);  % Garante que o arquivo será fechado mesmo em caso de erro
+        end
+    end
+end
+
+function parseCSV()
+    % FUNÇÃO PARSECSV
+    % Analisa um arquivo CSV (valores separados por vírgula)
+    %
+    % Funcionamento:
+    % 1. Abre o arquivo 'test_file.txt' no diretório atual
+    % 2. Lê o arquivo linha por linha
+    % 3. Divide cada linha pelos separadores (vírgulas)
+    % 4. Exibe cada token (valor entre vírgulas) separadamente
+    %
+    % Observações:
+    % - Remove espaços em branco no início e fim de cada token
+    % - Considera que o arquivo usa vírgula como separador
+    
+    filename = fullfile(pwd, 'test_file.txt');  % Cria o caminho completo para o arquivo
+    
+    try
+        % Abre o arquivo para leitura
+        fid = fopen(filename, 'r');
+        if fid == -1
+            error('Erro ao abrir arquivo');
+        end
+        
+        fprintf('\nAnalisando conteudo CSV:\n');
+        
+        % Loop de leitura linha por linha
+        while ~feof(fid)
+            line = fgetl(fid);  % Lê uma linha do arquivo
+            
+            if ischar(line)  % Verifica se a linha é válida (não vazia)
+                % Divide a linha pelos separadores (vírgulas)
+                tokens = strsplit(line, ',');
+                
+                % Exibe cada token (valor entre vírgulas)
+                for i = 1:length(tokens)
+                    fprintf('%s\n', strtrim(tokens{i}));  % Remove espaços e exibe
+                end
+            end
+        end
+        
+        fclose(fid);  % Fecha o arquivo
+        
+    catch ME
+        % Tratamento de erros
+        fprintf('Erro: %s\n', ME.message);
+        if exist('fid', 'var') && fid ~= -1
+            fclose(fid);  % Garante que o arquivo será fechado mesmo em caso de erro
+        end
+    end
+end

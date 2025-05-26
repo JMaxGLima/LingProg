@@ -2,6 +2,7 @@
 Programa: Linguagem de Programacao - Pratica8.cpp
 Autor: Joao Max Germano Lima
 Data: 26/05/2025
+
 Descricao: Programa em C++ que demonstra diversas operacoes de manipulacao de arquivos, incluindo:
 - Leitura caractere por caractere
 - Leitura linha por linha
