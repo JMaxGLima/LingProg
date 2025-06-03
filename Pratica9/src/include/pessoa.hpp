@@ -12,9 +12,9 @@ protected:
 
 public:
     Pessoa(const std::string& nome, int idade, int cpf);
+    virtual ~Pessoa();
     const std::string& pega_nome();
     const int& exibe_cpf();
-    virtual ~Pessoa();
-};
+    };
 
 #endif /* PESSOA_HPP */

@@ -10,10 +10,6 @@ void Empresa::contrata(Empregado& emp) {
     std::cout << "Contratando empregado: " << emp.pega_nome() << std::endl;
 }
 
-const Empresa::exibe_cnpj(Empresa& cnpj) {
-    return cnpj;
-}
-
 Empresa::~Empresa() {
     std::cout << "Destruindo Empresa:" << cnpj << std::endl;
 }
