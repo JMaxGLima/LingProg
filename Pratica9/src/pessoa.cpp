@@ -1,7 +1,7 @@
 #include "./include/pessoa.hpp"
 
-Pessoa::Pessoa(const std::string& nome, int idade, int cpf) 
-    :nome(nome), 
+Pessoa::Pessoa(const std::string& nome, int idade, int cpf) :
+    nome(nome), 
     idade(idade), 
     cpf(cpf) {}
 
