@@ -1,0 +1,167 @@
+2025-06-27 18:59:25 - Medições iniciadas
+2025-06-27 18:59:25 - |Condicoes de Temperatura:26.50|TEMP_ALERTA|
+2025-06-27 18:59:25 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:25 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:26 - |Condicoes de Temperatura:26.50|TEMP_ALERTA|
+2025-06-27 18:59:26 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:27 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:27 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:27 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:28 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:28 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:29 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:29 - Condicoes de Umidade:65.00|NORMAL|
+2025-06-27 18:59:29 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:30 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:31 - Condicoes de Umidade:65.00|NORMAL|
+2025-06-27 18:59:32 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:32 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:32 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:33 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:33 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:34 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:34 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:34 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:35 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:35 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:36 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:36 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:36 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:37 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:37 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:38 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:38 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:39 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:40 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:40 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:41 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:41 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:41 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:42 - |Condicoes de Temperatura:26.10|TEMP_ALERTA|
+2025-06-27 18:59:42 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:43 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:43 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:43 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:44 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:44 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:45 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:45 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:45 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:46 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:46 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:47 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:47 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:48 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:49 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:49 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:50 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:50 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:50 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:51 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:51 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:52 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:52 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:52 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:53 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:53 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:54 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:54 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:54 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:55 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:55 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 18:59:56 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:56 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 18:59:57 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 18:59:58 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:58 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 18:59:59 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 18:59:59 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 18:59:59 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:00 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:00 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:01 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:01 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:01 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:02 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:02 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:03 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:03 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:03 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:04 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:05 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:06 - |Condicoes de Temperatura:25.50|TEMP_ALERTA|
+2025-06-27 19:00:06 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:06 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:07 - |Condicoes de Temperatura:25.50|TEMP_ALERTA|
+2025-06-27 19:00:07 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:08 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:08 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:08 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:09 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:09 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:10 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:10 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:10 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:11 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:11 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:12 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:12 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:13 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:14 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:14 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:15 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:15 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:15 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:16 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:16 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:17 - |Condicoes de Temperatura:26.70|TEMP_ALERTA|
+2025-06-27 19:00:17 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:17 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:18 - |Condicoes de Temperatura:26.70|TEMP_ALERTA|
+2025-06-27 19:00:18 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:19 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:19 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:19 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:20 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:20 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:21 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:21 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:22 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:23 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:23 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:24 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:24 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:24 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:25 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:25 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:26 - |Condicoes de Temperatura:27.20|TEMP_ALERTA|
+2025-06-27 19:00:26 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:26 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:27 - |Condicoes de Temperatura:27.20|TEMP_ALERTA|
+2025-06-27 19:00:27 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:28 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:28 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:28 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:29 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:29 - Condicoes de Umidade:63.00|NORMAL|
+2025-06-27 19:00:30 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:30 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:31 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:32 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:32 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:33 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:33 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:33 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:34 - |Condicoes de Temperatura:26.20|TEMP_ALERTA|
+2025-06-27 19:00:34 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:35 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:35 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:35 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:36 - |Condicoes de Temperatura:26.30|TEMP_ALERTA|
+2025-06-27 19:00:36 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:37 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:37 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:37 - ALERTA: Temperatura acima de 20°C!
+2025-06-27 19:00:38 - |Condicoes de Temperatura:26.40|TEMP_ALERTA|
+2025-06-27 19:00:38 - Condicoes de Umidade:64.00|NORMAL|
+2025-06-27 19:00:39 - Medições paradas
