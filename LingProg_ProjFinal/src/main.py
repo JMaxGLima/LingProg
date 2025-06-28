@@ -23,6 +23,29 @@ import threading
 from datetime import datetime
 from log.dht_logger import log_dht_data
 
+def read_from_terminal(ser, running):
+    """
+    Função executada em thread separada para monitorar entrada do usuário.
+    
+    Lê continuamente a entrada do terminal e envia comandos via serial:
+    - 'start': Envia comando para iniciar medições
+    - 'stop': Envia comando para parar medições
+    
+    Args:
+        ser: Objeto de conexão serial
+        running: Flag para controle da execução da thread
+    """
+    while running:
+        user_input = input().strip().lower()
+        if user_input == 'start':
+            ser.write(b'start\n')
+            print("Comando 'start' enviado via serial")
+        elif user_input == 'stop':
+            ser.write(b'stop\n')
+            print("Comando 'stop' enviado via serial")
+        else:
+            print("Comando desconhecido. Use 'start' ou 'stop'")
+
 def monitor_serial(port='/dev/ttyACM0', baudrate=9600):
     """
     Monitora a porta serial para receber dados de sensores DHT e enviar comandos.
@@ -50,27 +73,8 @@ def monitor_serial(port='/dev/ttyACM0', baudrate=9600):
         # Flag para controle da execução das threads
         running = True
         
-        def read_from_terminal():
-            """
-            Função executada em thread separada para monitorar entrada do usuário.
-            
-            Lê continuamente a entrada do terminal e envia comandos via serial:
-            - 'start': Envia comando para iniciar medições
-            - 'stop': Envia comando para parar medições
-            """
-            while running:
-                user_input = input().strip().lower()
-                if user_input == 'start':
-                    ser.write(b'start\n')
-                    print("Comando 'start' enviado via serial")
-                elif user_input == 'stop':
-                    ser.write(b'stop\n')
-                    print("Comando 'stop' enviado via serial")
-                else:
-                    print("Comando desconhecido. Use 'start' ou 'stop'")
-        
         # Configuração e inicialização da thread para entrada de comandos
-        terminal_thread = threading.Thread(target=read_from_terminal)
+        terminal_thread = threading.Thread(target=read_from_terminal, args=(ser, running))
         terminal_thread.daemon = True  # Thread morre quando o programa principal termina
         terminal_thread.start()
         
