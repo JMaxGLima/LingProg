@@ -46,7 +46,7 @@ def read_from_terminal(ser, running):
         else:
             print("Comando desconhecido. Use 'start' ou 'stop'")
 
-def monitor_serial(port='/dev/ttyACM0', baudrate=9600):
+def monitor_serial(port='COM4', baudrate=9600):
     """
     Monitora a porta serial para receber dados de sensores DHT e enviar comandos.
     

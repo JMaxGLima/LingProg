@@ -43,7 +43,7 @@ def log_dht_data(data):
     """
 
     # Configuração do diretório de logs - caminho fixo
-    log_directory = "/home/joaomax/Documentos/LingProg_ProjFinal/src/log/dht_logs/"
+    log_directory = r"C:\Users\55279\Documents\LingProg\LingProg_ProjFinal\src\log\dht_logs"
     
     # Criação do diretório se não existir (com tratamento de permissões implícito)
     if not os.path.exists(log_directory):
