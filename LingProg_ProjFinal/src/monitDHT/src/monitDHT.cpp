@@ -112,7 +112,7 @@ void lerSensor() {
   }
   
   // Atualiza estados de alerta
-  tempAlertaAtivo = temperatura >= 25.0;  // Alerta para temp > 25°C
+  tempAlertaAtivo = temperatura >= 27.0;  // Alerta para temp > 27°C
   umidAlertaAtivo = umidade <= 60.0;      // Alerta para umid < 60%
   
   // Exibe dados no monitor serial
@@ -138,7 +138,7 @@ void verificarAlertas() {
     algumAlertaAtivo = true;
     if (currentMillis - lastTempAlertTime >= AlertInterval) {
       lastTempAlertTime = currentMillis;
-      ativarAlarme(200, "ALERTA: Temperatura acima de 25°C!");
+      ativarAlarme(200, "ALERTA: Temperatura acima de 27°C!");
     }
   }
 
