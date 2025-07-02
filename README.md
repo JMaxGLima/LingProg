@@ -47,10 +47,12 @@ Pré-requisitos
 
     Sistema Windows (para algumas implementações específicas)
 
-Compilação e Execução
+## Compilação e Execução
 
-Cada atividade contém instruções específicas em seu respectivo diretório.
+    Cada atividade contém instruções específicas em seu respectivo diretório.
 
+    Obs: - Pratica 10 é apenas uso de Doxygen;
+         - Pratica 2, Pratica 10 e PraticaLV incompletos;
 
 📜 Licença
 
