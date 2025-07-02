@@ -37,21 +37,21 @@ Repositório acadêmico contendo soluções implementadas para as atividades pr�
 ## 🚀 Como Executar
 Pré-requisitos
 
-    Compilador GCC (para C/C++)
+-- Compilador GCC (para C/C++)
 
-    Python 3.x
+-- Python 3.x
 
-    MATLAB (para scripts .m)
+-- MATLAB (para scripts .m)
 
-    LabVIEW Runtime Engine (para práticas LV)
+-- LabVIEW Runtime Engine (para práticas LV)
 
-    Sistema Windows (para algumas implementações específicas)
+-- Sistema Windows (para algumas implementações específicas)
 
 ## Compilação e Execução
 
-    Cada atividade contém instruções específicas em seu respectivo diretório.
+-- Cada atividade contém instruções específicas em seu respectivo diretório.
 
-    Obs: - Pratica 10 é apenas uso de Doxygen;
+-- Obs: - Pratica 10 é apenas uso de Doxygen;
          - Pratica 2, Pratica 10 e PraticaLV incompletos;
 
 📜 Licença
